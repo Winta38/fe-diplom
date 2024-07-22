@@ -1,0 +1,93 @@
+footer {
+  width: 100%;
+  background-color: #2d2b2f;
+  color: #e5e5e5;
+}
+
+.contactsWrapper {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.contactList li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts {
+  padding: 50px 82px;
+  justify-content: space-between;
+}
+
+.contactPanel {
+  width: 346px;
+}
+
+.listItem::before {
+  display: block;
+  width: 30px;
+  padding-right: 36px;
+}
+
+.tel::before {
+  content: url("../../assets/icons/phone.svg");
+}
+
+.mail::before {
+  content: url("../../assets/icons/mail.svg");
+}
+
+.skype::before {
+  content: url("../../assets/icons/skype.svg");
+}
+
+.adress::before {
+  content: url("../../assets/icons/place.svg");
+}
+
+.subscribeForm {
+  margin-top: 23px;
+}
+
+.formInput {
+  margin-top: 20px;
+  gap: 35px;
+}
+
+.subscribeInput {
+  width: 445px;
+  height: 65px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 0;
+}
+
+.iconList {
+  margin-top: 44px;
+}
+
+.subscribeList {
+  margin-top: 25px;
+  gap: 55px;
+}
+
+.footerIcon {
+  cursor: pointer;
+}
+
+.footerIcon:active {
+  filter: brightness(0) saturate(100%) invert(97%) sepia(99%) saturate(7437%)
+    hue-rotate(311deg) brightness(103%) contrast(102%);
+}
+
+.toTop {
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
+}
+
+.toTop::after {
+  content: url("../../assets/icons/arrow.svg");
+  line-height: 8px;
+  height: 14px;
+}

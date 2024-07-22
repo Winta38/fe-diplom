@@ -1,0 +1,272 @@
+header {
+  position: relative;
+  z-index: 1;
+}
+
+.introImg,
+.mainImg {
+  color: #ffffff;
+}
+
+.introImg {
+  height: 985px;
+  background-color: #9b6909;
+  border-bottom: 8px solid #ffa800;
+}
+
+.mainImg {
+  height: 590px;
+  background-color: #000000;
+}
+
+.panelWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.headerPanel {
+  height: 94px;
+  background-color: #292929;
+}
+
+.headerMenu {
+  height: 100%;
+  align-items: center;
+  gap: 165px;
+}
+
+.menuItem {
+  font-weight: 300;
+  font-size: 30px;
+  color: #e5e5e5;
+}
+
+.slogan {
+  margin-right: 150px;
+  font-size: 72px;
+}
+
+.headerForm {
+  background-color: rgba(41, 41, 41, 0.8);
+}
+
+.headerForm__normal {
+  padding: 85px 20px 50px 20px;
+  width: 730px;
+}
+
+.headerForm__slim {
+  padding: 35px 42px 75px 42px;
+}
+
+.form__row {
+  margin: 20px 0 65px 0;
+  gap: 6px;
+}
+
+.formWrapper__slim,
+.form__row__slim {
+  gap: 35px;
+}
+
+.row__second {
+  position: relative;
+  z-index: 0;
+}
+
+.inputWrapper,
+.inputWrapper__side {
+  position: relative;
+}
+
+.inputWrapper {
+  width: 325px;
+}
+
+.inputWrapper__side {
+  width: 100%;
+}
+
+.input {
+  width: inherit;
+  height: 60px;
+  padding: 10px;
+  border: 0;
+  border-radius: 3px;
+}
+
+.clearup__icon,
+.clearup__icon__side {
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+}
+
+.clearup__icon {
+  top: 25%;
+}
+
+.clearup__icon__side {
+  top: 10%;
+}
+
+.change {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  content: url("../../assets/icons/ic_cached_white_48dp.png");
+}
+
+.form__submit {
+  align-self: flex-end;
+  width: 325px;
+}
+
+.first,
+.second {
+  position: relative;
+}
+
+/* Календарь */
+
+.calendarWrapper {
+  position: absolute;
+  top: 80px;
+  left: -25px;
+  box-shadow: 5px 5px 10px rgba(41, 41, 41, 0.2);
+  border-radius: 10px;
+}
+
+.calendarArrow {
+  position: absolute;
+  top: -14px;
+  left: calc(50% - 15px);
+  transform: rotate(45deg);
+  width: 30px;
+  height: 30px;
+  z-index: 0;
+  background-color: #ffffff;
+}
+
+.calendar {
+  position: relative;
+  z-index: 999;
+  font-family: "Saira";
+  width: 355px;
+  background-color: #ffffff;
+  color: #292929;
+  border-radius: inherit;
+}
+
+.calendarHeader {
+  padding: 15px 50px;
+  border-bottom: 1px solid #d3d3d3;
+  text-transform: capitalize;
+}
+
+.changeMonth {
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.month {
+  font-family: "Verdana";
+}
+
+.calendarGrid {
+  display: grid;
+  gap: 0;
+  padding: 20px 30px;
+  grid-template-columns: repeat(7, 1fr);
+  border-radius: inherit;
+}
+
+.cell {
+  cursor: pointer;
+}
+
+.cell:nth-child(7n) {
+  font-weight: 600;
+}
+
+.active {
+  background-color: #ffaa0073;
+  border: 1px solid #ffa800;
+  border-radius: 3px;
+}
+
+.passed {
+  color: #808080;
+}
+
+/* Выбор городов */
+
+.cityOptions {
+  width: 305px;
+  padding: 10px;
+  position: absolute;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 3px;
+  top: 70px;
+  z-index: 1;
+  box-shadow: 5px 5px 10px rgba(41, 41, 41, 0.2);
+}
+
+.city {
+  font-family: "Verdana";
+  padding: 5px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* Прогресс заказа */
+
+.progressBar {
+  position: relative;
+  z-index: -1;
+  height: 100px;
+  background-color: #3e3c41;
+  color: #ffffff;
+}
+
+.margin {
+  width: 258px;
+}
+
+.progressCells {
+  height: inherit;
+  justify-content: space-evenly;
+}
+
+.progressCell {
+  width: 100%;
+}
+
+.cellNumber {
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  height: 58px;
+  width: 58px;
+  margin: 0 25px;
+}
+
+.cellText {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.arrowWrapper {
+  margin-left: -50px;
+  z-index: 0;
+}
+
+.progressArrow {
+  width: 100px;
+  height: 100px;
+  transform: scale(0.5, 0.7) rotate(45deg);
+  border-right: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+}

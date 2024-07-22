@@ -1,0 +1,301 @@
+.seats__header {
+  margin-bottom: 60px;
+}
+
+.seats__panel {
+  padding: 35px 20px;
+}
+
+.seats__panel__header {
+  height: 60px;
+  gap: 10px;
+}
+
+.sign {
+  background-color: #ffa800;
+  font-size: 30px;
+  padding: 0 20px;
+  color: #ffffff;
+  border: 0;
+}
+
+.train__desc {
+  padding: 0 15px;
+  gap: 10px;
+}
+
+.train__type__seats {
+  margin: 52px 0 67px 0;
+}
+
+.direction__full__seats {
+  width: 195px;
+}
+
+.type__list {
+  margin-top: 25px;
+  justify-content: space-evenly;
+}
+
+.seat__type {
+  padding: 20px 33px;
+  width: 33%;
+  border: 1px solid white;
+}
+
+.seat__type__active {
+  border: 1px solid #ffa800;
+}
+
+.seat__type__panel {
+  border: 1px solid #928f94;
+  border-radius: 3px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.explanation {
+  margin-top: 25px;
+}
+
+.border {
+  height: 50px;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px dotted #c4c4c4;
+}
+
+.type__icon {
+  display: block;
+  margin-bottom: 22px;
+  cursor: pointer;
+}
+
+.type__icon:hover {
+  filter: brightness(0) saturate(100%) invert(76%) sepia(29%) saturate(5633%)
+    hue-rotate(357deg) brightness(101%) contrast(106%);
+}
+
+.btn__wrapper {
+  display: flex;
+  justify-content: end;
+  margin: 100px 0 125px 0;
+}
+
+.seat {
+  margin-bottom: 25px;
+}
+
+.train__icon__seats::after {
+  content: url("../../assets/icons/train_or.png");
+  margin-right: 28px;
+}
+
+.timeOverview {
+  margin: 52px 0 67px 95px;
+  width: max-content;
+}
+
+.train__icon__time::after {
+  content: url("../../assets/icons/clock.png");
+  margin-right: 10px;
+}
+
+.seat__type__comfort {
+  padding: 20px 33px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fourth {
+  content: url("../../assets/icons/fourth_big.svg");
+}
+
+.third {
+  content: url("../../assets/icons/third_big.svg");
+}
+
+.second {
+  content: url("../../assets/icons/second_big.svg");
+}
+
+.first {
+  content: url("../../assets/icons/first_big.svg");
+}
+
+.vagonList__header {
+  height: 35px;
+  padding: 0 33px;
+  background-color: #ffd98f;
+}
+
+.vagon__numbers {
+  gap: 5px;
+}
+
+.vagon__number {
+  justify-content: center;
+  width: 190px;
+  background-color: #ffd98f;
+}
+
+.vagon__number h1 {
+  margin-bottom: 0;
+}
+
+.vagonSceme__grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 37px 60px 0 85px;
+}
+
+.grid__col {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.grid__col:last-child {
+  align-items: center;
+}
+
+.grid__col > div {
+  display: flex;
+  gap: 5px;
+}
+
+.vagonServices {
+  gap: 15px;
+}
+
+.icon__back {
+  display: block;
+  border-radius: 3px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.free__back:hover {
+  background-color: #ffa800;
+}
+
+.icon__vagon {
+  padding: 3px 4px;
+}
+
+.chosen__back {
+  background-color: #ffa800;
+  border: 1px solid #ffa800;
+}
+
+.chosen {
+  filter: invert(100%);
+}
+
+.included__back {
+  background-color: #ffd98f;
+  border: 1px solid #ffd98f;
+}
+
+.included {
+  filter: saturate(100%) invert(68%) sepia(0%) brightness(86%) contrast(78%);
+}
+
+.choosingWithYou {
+  padding: 20px 65px 0 65px;
+  height: 65px;
+  align-items: center;
+}
+
+.choosingWithYou p {
+  width: 170px;
+}
+
+.schemeGrarhic {
+  margin: 20px;
+  position: relative;
+}
+
+.seats {
+  width: 710.5px;
+  position: absolute;
+  top: 6px;
+  left: 135.3px;
+}
+
+.smallSeats {
+  width: 700px;
+  top: 9px;
+  left: 141px;
+}
+
+.sideRow {
+  margin-top: 28px;
+}
+
+.thinRow {
+  width: 610px;
+  margin: 14px 0 0 45px;
+}
+
+.singleSeat {
+  width: 26px;
+  height: 29.5px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #cccccc;
+  color: white;
+  cursor: pointer;
+}
+
+.singleSeat:nth-child(even) {
+  margin-left: 34px;
+}
+
+.singleSeat:nth-child(odd):not(:first-child) {
+  margin-left: 2.7px;
+}
+
+.firstSeat {
+  height: 60px;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 5px;
+}
+
+.thirdSeat {
+  width: 52px;
+  height: 23px;
+}
+
+.thirdSeat:nth-child(even) {
+  margin-left: 0;
+}
+
+.fourthSeat {
+  width: 26px;
+  height: 20px;
+  margin-bottom: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #cccccc;
+  color: white;
+  cursor: pointer;
+}
+
+.free {
+  background-color: white;
+  color: black;
+}
+
+.free:hover {
+  background-color: #ffa800;
+}
+
+.chosenSeat {
+  border: 1px solid #ffa800;
+}
+
+.ticketCost {
+  padding: 0 40px 20px;
+}

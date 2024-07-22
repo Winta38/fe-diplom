@@ -1,0 +1,282 @@
+.parameters {
+  color: #e5e5e5;
+  background-color: #3e3c41;
+}
+
+.parameters__header,
+.parameters__total {
+  padding: 40px;
+}
+
+.parameters__info {
+  padding-top: 22px;
+  padding-bottom: 65px;
+}
+
+.parameters__passengers {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.parameters__path {
+  padding-top: 50px;
+}
+
+.parameters__service {
+  padding-left: 60px;
+}
+
+.parameters__price {
+  padding: 45px 30px;
+}
+
+.parameters__way {
+  padding: 30px;
+}
+
+.parameters__total {
+  margin-bottom: 100px;
+}
+
+.label {
+  margin-bottom: 10px;
+}
+
+.input__side {
+  margin-bottom: 32px;
+  height: 45px;
+}
+
+.service:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.name {
+  display: grid;
+  grid-template-columns: 20px auto;
+  font-size: 18px;
+  gap: 30px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 20px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 28px;
+  width: 28px;
+  bottom: -4px;
+  background-color: #c4c4c4;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #fcdc9d;
+}
+
+input:checked + .slider:before {
+  transform: translateX(43px);
+  background-color: #ffa800;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.opened {
+  margin-top: 30px;
+}
+
+.slider__large,
+.slider__large::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 25px;
+}
+
+.slider__large {
+  width: 100%;
+  background-color: #3e3c41;
+  border: 1px solid white;
+  outline: none;
+  transition: opacity 0.2s;
+  height: 15px;
+  border-radius: 10px;
+}
+
+.slider__large::-webkit-slider-thumb {
+  width: 25px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.slider__multi {
+  position: relative;
+  margin: 7px 0;
+}
+
+.slider__multi__path {
+  position: relative;
+  z-index: 1;
+  height: 15px;
+  margin: 0 10px;
+}
+
+.slider__multi__path > .slider__track {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  background-color: #3e3c41;
+  border: 1px solid white;
+}
+
+.slider__multi__path > .slider__range {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  border-radius: 10px;
+  background-color: #ffa800;
+}
+
+.slider__multi__path > .thumb {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.slider__multi__path > .thumb.left {
+  transform: translate(-15px, -5px);
+}
+
+.slider__multi__path > .thumb.right {
+  transform: translate(15px, -5px);
+}
+
+#input_left,
+#input_right {
+  position: absolute;
+  appearance: none;
+  z-index: 2;
+  pointer-events: none;
+  height: 15px;
+  width: 100%;
+  opacity: 0;
+}
+
+#input_left::-webkit-slider-thumb,
+#input_right::-webkit-slider-thumb {
+  appearance: none;
+  cursor: pointer;
+  pointer-events: all;
+  background-color: red;
+  width: 25px;
+  height: 25px;
+}
+
+.button__way {
+  border: 0;
+  background-color: #ffa800;
+  border-radius: 8px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.openBtn {
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  padding: 0;
+  background-color: #3e3c41;
+  border-radius: 5px;
+  color: #e5e5e5;
+  border: 1px solid #e5e5e5;
+}
+
+.openBtn:hover {
+  color: #fcdc9d;
+  border: 1px solid #fcdc9d;
+}
+
+.way__desc {
+  margin-top: 55px;
+}
+
+.latestTickets {
+  margin: 100px 0 100px 0;
+}
+
+.ticket {
+  padding: 18px;
+  border: 1px solid #c4c4c4;
+  box-shadow: 0 1px 5px #c4c4c4;
+  margin-bottom: 20px;
+}
+
+.pathways {
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.passenger__desc {
+  margin: 20px 0 0 0;
+}
+
+.passengers {
+  margin-top: 20px;
+}
+
+.passenger__type {
+  gap: 5px;
+}
+
+.line {
+  margin-bottom: 25px;
+}
+
+.directions__side {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+}
+
+.gap {
+  margin-bottom: 25px;
+}

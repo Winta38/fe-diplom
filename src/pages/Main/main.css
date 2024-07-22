@@ -1,0 +1,127 @@
+.block__about {
+  padding: 144px 0 115px 0;
+}
+
+.aboutText {
+  padding-left: 20px;
+  margin-top: 40px;
+  border-left: 8px solid #ffa800;
+}
+
+.text:nth-child(-n + 2) {
+  margin-bottom: 28px;
+}
+
+.aboutImg {
+  padding: 70px 0;
+  background-color: #ffa800;
+}
+
+.block__rules {
+  color: #ffffff;
+}
+
+.prosList {
+  margin-top: 110px;
+  padding: 0 250px;
+}
+
+.list__item {
+  width: 30%;
+}
+
+.pro__item {
+  margin-bottom: 35px;
+  width: 162px;
+  height: 162px;
+  background-color: #ffffff20;
+  border-radius: 50%;
+}
+
+.pro__item::after {
+  width: 136px;
+  height: 136px;
+}
+
+.pc::after {
+  content: url("../../assets/icons/pc.png");
+}
+
+.build::after {
+  content: url("../../assets/icons/build.png");
+}
+
+.web::after {
+  content: url("../../assets/icons/web.png");
+}
+
+.block__feedback {
+  padding: 160px 0 120px 0;
+}
+
+.feedback__list {
+  margin-top: 80px;
+}
+
+.feedback__item {
+  width: 45%;
+}
+
+.citation {
+  position: relative;
+  margin-top: 30px;
+}
+
+.citation::before,
+.citation::after {
+  font-size: 48px;
+  color: #7a7a7a;
+  line-height: 1px;
+  position: absolute;
+}
+
+.citation::before {
+  top: 20px;
+  left: -30px;
+  content: "\201C";
+}
+
+.citation::after {
+  content: "\201D";
+  bottom: -10px;
+}
+
+.faint {
+  font-size: 18px;
+  color: #928f94;
+  font-style: italic;
+}
+
+.indicators {
+  gap: 12px;
+  margin-top: 135px;
+}
+
+.indicator {
+  height: 19px;
+  width: 19px;
+  background-color: #e5e5e5;
+  border: 0;
+  border-radius: 50%;
+}
+
+.portrait {
+  display: block;
+  margin-right: 50px;
+  flex-shrink: 0;
+  width: 206px;
+  height: 206px;
+  background-color: #292929;
+  border-radius: 50%;
+}
+
+.link {
+  display: block;
+  width: max-content;
+  background-color: #ffa800;
+}

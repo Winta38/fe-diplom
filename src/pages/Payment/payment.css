@@ -1,0 +1,21 @@
+.form__wrapper__standart {
+  padding: 35px;
+}
+
+.cash {
+  height: 95px;
+  align-items: center;
+}
+
+.phone label,
+.email label {
+  width: 370px;
+}
+
+.email {
+  margin-bottom: 55px;
+}
+
+.onlinePayment__options {
+  gap: 105px;
+}

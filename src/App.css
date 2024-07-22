@@ -1,0 +1,545 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic-ext");
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 24px;
+}
+
+#root {
+  position: relative;
+}
+
+section {
+  margin: 0 258px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  padding: 0 28px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  font-family: "Roboto";
+  font-size: 24px;
+  line-height: 24px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input {
+  font-family: "Verdana";
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+select {
+  font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+::-webkit-input-placeholder {
+  color: #e5e5e5;
+}
+
+.container {
+  position: relative;
+}
+
+.column {
+  flex-shrink: 0;
+}
+
+.background,
+.portrait {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: 900;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.table {
+  justify-content: space-between;
+  padding-top: 95px;
+}
+
+.serviceList {
+  gap: 10px;
+  margin: 0;
+}
+
+.nameWrapper {
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.arrow__to {
+  font-size: 34px;
+}
+
+/* Кнопки на белом фоне */
+
+.button,
+.button__transp,
+.onBlack__standart {
+  font-weight: bold;
+}
+
+.button__transp {
+  padding: 10px 60px;
+}
+
+.button:hover,
+.button__transp:hover {
+  box-shadow: 0 4px 4px #00000040;
+}
+
+.button:disabled {
+  background-color: #928f94;
+  border: 1px solid #928f94;
+}
+
+.button:active {
+  background-color: #ffffff;
+  color: #ffa800;
+  border: 1px solid #ffa800;
+}
+
+.button__transp:active {
+  background-color: #ffa800;
+  color: black;
+}
+
+.standart,
+.standart__white,
+.narrow {
+  border: 1px solid #ffa800;
+  background-color: #ffa800;
+}
+
+.standart,
+.standart__white {
+  padding: 20px 65px;
+  text-transform: uppercase;
+}
+
+.standart__white,
+.narrow {
+  color: white;
+}
+
+.narrow {
+  padding: 10px 20px;
+}
+
+.compact {
+  padding: 10px 35px;
+}
+
+.narrow__black {
+  background-color: #00000000;
+  color: black;
+  border: 1px solid black;
+}
+
+/* Кнопки на черном фоне */
+
+.transp__button {
+  background-color: #00000000;
+  color: white;
+  border: 1px solid white;
+}
+
+.transp__button:hover {
+  background-color: #ffca62;
+  border: 1px solid #ffca62;
+}
+
+.transp__button:active {
+  background-color: white;
+  border: 1px solid white;
+  color: black;
+}
+
+.onBlack {
+  padding: 20px 65px;
+  font-weight: bold;
+}
+
+.onBlack__small {
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+/* Кастомное выпадающее меню */
+
+.customSelect,
+.customSelect__form {
+  position: relative;
+  user-select: none;
+}
+
+.customSelect {
+  margin-left: 10px;
+  width: 150px;
+}
+
+.customSelect__form {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0 0 0;
+  border-radius: 3px;
+  border: 1px solid #928f94;
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%);
+  background-position: calc(100% - 20px) calc(1em + 5px),
+    calc(100% - 15px) calc(1em + 5px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+.customDropdown,
+.customDropdown__form {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #c4c4c4;
+  border-radius: 3px;
+  box-shadow: 0 4px 4px #00000040;
+}
+
+.customDropdown {
+  top: -32px;
+  left: -9px;
+}
+
+.customDropdown__form {
+  width: calc(100% + 2px);
+  top: -1px;
+  left: -1px;
+}
+
+.customDropdown li {
+  padding: 15px 8px;
+}
+
+.customDropdown__form li {
+  padding: 15px;
+}
+
+.customDropdown li:not(:last-child),
+.customDropdown__form li:not(:last-child) {
+  border-bottom: 1px solid #c4c4c4;
+}
+
+/* Отдельные характеристики */
+
+.px22 {
+  font-size: 22px;
+}
+
+.px18 {
+  font-size: 18px;
+}
+
+.px16 {
+  font-size: 16px;
+}
+
+.px14 {
+  font-size: 14px;
+}
+
+.thin {
+  font-weight: 100;
+}
+
+.medium {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+}
+
+.toRigth {
+  text-align: end;
+}
+
+.capital {
+  text-transform: capitalize;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}
+
+.grey {
+  color: #928f94;
+}
+
+.lightgrey {
+  color: #c4c4c4;
+}
+
+.orange {
+  color: #ffa800;
+}
+
+.border__btm {
+  border-bottom: 1px dotted #c4c4c4;
+}
+
+.greyIcon {
+  filter: invert(80%) sepia(12%) saturate(11%) hue-rotate(21deg) brightness(95%)
+    contrast(98%);
+}
+
+.lightGreyIcon {
+  filter: invert(99%) sepia(1%) saturate(4435%) hue-rotate(227deg)
+    brightness(118%) contrast(80%);
+}
+
+.icon__active {
+  filter: brightness(0) saturate(100%) invert(76%) sepia(29%) saturate(5633%)
+    hue-rotate(357deg) brightness(101%) contrast(106%);
+}
+
+.panel__wrapper {
+  box-shadow: 0 1px 5px #c4c4c4;
+  border: 1px solid #c4c4c4;
+}
+
+.panel__standart {
+  padding: 35px 40px 35px 20px;
+}
+
+.next {
+  background-color: #928f94;
+}
+
+/* Флексы */
+
+.flex,
+.flex__end,
+.flex__standart,
+.flex__column,
+.flex__center {
+  display: flex;
+}
+
+.flex__standart {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex__end {
+  justify-content: flex-end;
+}
+
+.flex__column {
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex__center {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Чекмарк */
+
+.checkmark {
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #928f94;
+  border-radius: 3px;
+}
+
+.checkmark__active {
+  border: 1px solid #ffa800;
+}
+
+.checkmark__active::after {
+  font-size: 16px;
+  content: "\2714";
+  color: #ffa800;
+}
+
+.check label {
+  display: flex;
+  align-items: center;
+}
+
+/* Ошибки и всплывающие окна */
+
+.errorWindow {
+  background-color: #ffb59e;
+}
+
+.completeWindow {
+  background-color: #b2f6a1;
+}
+
+.infoWindow {
+  background-color: #fcf9a1;
+}
+
+.popup__message {
+  align-items: center;
+  gap: 10px;
+}
+
+.icon__error,
+.icon__complete,
+.icon__info {
+  background-color: white;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.icon__error {
+  color: #ffb59e;
+}
+
+.icon__complete {
+  color: #b2f6a1;
+}
+
+.icon__info {
+  color: #fcf9a1;
+}
+
+.incorrect {
+  border: 1px solid #ff784c;
+  color: #ff784c;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+input.incorrect:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-text-fill-color: #ff784c;
+}
+
+.noticeWrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 240px;
+}
+
+.noticeWrapper::before {
+  content: "";
+  background-color: #000000;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+}
+
+.notice_box {
+  width: 670px;
+  position: relative;
+  z-index: 2;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 5px #0000006b;
+  border: 1px solid #c4c4c4;
+}
+
+.notice_header,
+.notice_footer {
+  height: 110px;
+  padding: 35px;
+}
+
+.notice_body {
+  padding: 50px;
+}
+
+.msg_header {
+  margin-bottom: 35px;
+}
