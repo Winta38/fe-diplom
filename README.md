@@ -1,3 +1,5 @@
+[![Github Pages](https://img.shields.io/badge/GitHub-Pages-green)](https://winta38.github.io/fe-diplom/)
+
 # Дипломная работа к профессии Frontend-разработчик «Система бронирования ж/д билетов»
 
 ### Краткое описание задачи дипломной работы
