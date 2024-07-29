@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import InputMask from "react-input-mask";
 import composeClassName from "../../utils/composeClassName";
 import { func, string } from "prop-types";
 
@@ -66,14 +67,18 @@ export default function DataForm({ gatherData, errorCause }) {
       <div className="phone flex__standart">
         <label className="form__label px18">
           Контактный телефон
-          <input
+          <InputMask
+            mask="+7 (999) 999-99-99"
+            maskChar=" "
             className={composeClassName("phone", errorCause)}
             id="phone"
             value={phone}
             onChange={inputChange}
             required
-            placeholder="+7___ ___ __ __"
-          ></input>
+            placeholder="+7 (___) ___-__-__"
+          >
+            {(inputProps) => <input {...inputProps} type="text" />}
+          </InputMask>
         </label>
       </div>
       <div className="email flex__standart">
