@@ -111,3 +111,13 @@
   border: 0;
   background-color: #ffffff00;
 }
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.incorrect {
+  border-color: red;
+}

@@ -2,6 +2,7 @@ import { func, string } from "prop-types";
 import List from "../../models/List";
 import { useState, useEffect } from "react";
 import composeClassName from "../../utils/composeClassName";
+import "./passengers.css";
 
 export default function PassengerForm({ gatherData, errorCause }) {
   const ages = [
@@ -29,23 +30,17 @@ export default function PassengerForm({ gatherData, errorCause }) {
   const { name, surname, patronym, gender, birthdate, disabled } = state;
 
   const dropdown = () => {
-    if (open) {
-      setOpen(false);
-      return;
-    }
-    setOpen(true);
+    setOpen((prev) => !prev);
   };
 
   const changeType = (e) => {
-    ages.forEach((item) => {
-      if (item.id === e.target.id) setAge(item);
-    });
+    const selectedAge = ages.find((item) => item.id === e.target.id);
+    if (selectedAge) setAge(selectedAge);
     inputChange(e);
   };
 
   const inputChange = (e) => {
     const { id, value } = e.target;
-    id === "gender" && e.preventDefault();
     setState((prevForm) => ({
       ...prevForm,
       type: ages.find((item) => item.id === id) ? id : prevForm.type,
@@ -94,6 +89,9 @@ export default function PassengerForm({ gatherData, errorCause }) {
               onChange={inputChange}
               required
             ></input>
+            {errorCause.includes("surname") && (
+              <div className="error-text">Некорректная фамилия</div>
+            )}
           </label>
           <label className="form__label px18">
             Имя
@@ -104,6 +102,9 @@ export default function PassengerForm({ gatherData, errorCause }) {
               onChange={inputChange}
               required
             ></input>
+            {errorCause.includes("name") && (
+              <div className="error-text">Некорректное имя</div>
+            )}
           </label>
           <label className="form__label px18">
             Отчество
@@ -114,6 +115,9 @@ export default function PassengerForm({ gatherData, errorCause }) {
               onChange={inputChange}
               required
             ></input>
+            {errorCause.includes("patronym") && (
+              <div className="error-text">Некорректное отчество</div>
+            )}
           </label>
         </div>
         <div className="additions flex">
@@ -153,6 +157,9 @@ export default function PassengerForm({ gatherData, errorCause }) {
               onChange={inputChange}
               required
             ></input>
+            {errorCause.includes("birthdate") && (
+              <div className="error-text">Некорректная дата рождения</div>
+            )}
           </label>
         </div>
         <div className="disability check">
@@ -175,6 +182,6 @@ export default function PassengerForm({ gatherData, errorCause }) {
 }
 
 PassengerForm.propTypes = {
-  gatherData: func,
-  errorCause: string,
+  gatherData: func.isRequired,
+  errorCause: string.isRequired,
 };
